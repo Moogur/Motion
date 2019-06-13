@@ -1,0 +1,395 @@
+header
+  background-color: $headerBackground
+
+  .container
+    +container
+
+menu
+  +row-flex()
+  justify-content: space-between
+  padding: 38px 0 25px 0
+
+  .logo
+    +col()
+    +size(6)
+    +size-md(24)
+
+    .logoImg
+      +sprite($s-logo)
+      +clearfix()
+      float: left
+      margin: -8px 10px 0 0
+
+    h2
+      font-size: $logoSize
+      line-height: $logoLH
+      letter-spacing: 0.06em
+      font-weight: bold
+      color: $headerText
+      font-family: $regular
+
+    p
+      font-size: $logoPSize
+      line-height: $logoPLH
+      letter-spacing: 0.04em
+      color: $headerText
+      font-family: $regular
+
+  ul
+    +col()
+    +size(18)
+    +size-md(24)
+    +md(margin-top, 15px)
+    +md(text-align, center)
+    text-align: end
+
+    li
+      display: inline-block
+      color: $headerText
+      margin-left: 15px
+      padding: 9px 12px
+      font-size: $menuSize
+      font-family: $regular
+      letter-spacing: 0.02em
+
+      &:first-child
+        margin-left: 0
+
+      &:hover
+        cursor: pointer
+        background-color: $menuBacground
+        border-radius: $menuBR
+
+.smart
+  background-color: $profitBackground
+
+  .container
+    +container
+
+.profitTitle
+  font-size: $profitSize
+  letter-spacing: 0.16em
+  font-weight: bold
+  color: $headerText
+  font-family: $regular
+  text-align: center
+  padding-top: 40px
+
+.profitSubtitle
+  font-size: $profitSubtitleSize
+  line-height: $profitSubtitleLH
+  letter-spacing: 0.06em
+  color: $profitCoror
+  font-family: $regular
+  text-align: center
+  margin: 15px 0 35px 0
+
+.profitItems
+  +row-flex()
+  justify-content: space-around
+
+  .profitItem
+    +col()
+    +size(6)
+    +size-lg(8)
+    +size-md(12)
+    +size-sm(18)
+
+    .purpose
+      +sprite($s-purpose)
+
+    .ui
+      +sprite($s-ui)
+
+    .design
+      +sprite($s-design)
+
+    .img
+      margin: 0 auto
+      display: block
+
+    h3
+      font-size: $profitItemSize
+      letter-spacing: 0.03em
+      color: $headerText
+      font-family: $regular
+      text-align: center
+      margin-top: 15px
+
+    p
+      font-size: $profitItemSizeP
+      line-height: $profitItemLHP
+      letter-spacing: 0.04em
+      font-weight: bold
+      color: $profitItemColorP
+      font-family: $regular
+      text-align: center
+      margin: 5px 0 24px 0
+
+.expert
+  background-color: $expertBackground
+
+  .container
+    +container
+
+.expertTitle
+  font-size: $profitSize
+  letter-spacing: 0.16em
+  font-weight: bold
+  color: $headerText
+  font-family: $regular
+  text-align: center
+  padding-top: 40px
+
+.expertSubtitle
+  font-size: $profitSubtitleSize
+  line-height: $profitSubtitleLH
+  letter-spacing: 0.06em
+  color: $profitBackground
+  font-family: $regular
+  text-align: center
+  margin: 15px 0 35px 0
+
+.expertItems
+  +row-flex()
+  justify-content: space-around
+
+  .expertItem
+    +col()
+    +size(6)
+    +size-lg(8.01)
+    +size-md(10)
+    +size-sm(16)
+    background-color: $headerText
+    border-radius: $expertBR
+    margin-bottom: 26px
+
+    .ui
+      +sprite($s-1)
+
+    .app
+      +sprite($s-2)
+
+    .graphic
+      +sprite($s-3)
+
+    .web
+      +sprite($s-4)
+
+    .img
+      +col()
+      margin: 25px auto 0
+      display: block
+
+    h3
+      font-size: $expertItemSize
+      line-height: $profitSubtitleLH
+      letter-spacing: 0.01em
+      font-weight: bold
+      color: $expertItemColor
+      font-family: $regular
+      text-align: center
+      margin-top: 20px
+      padding: 0 5px
+
+    p
+      font-size: $profitItemSizeP
+      line-height: $profitItemLHP
+      letter-spacing: 0.04em
+      font-weight: bold
+      color: $expertItemColorP
+      font-family: $regular
+      text-align: center
+      margin-top: 12px
+      padding: 0 5px
+
+    button
+      font-size: $expertItemSize
+      letter-spacing: 0.1em
+      font-weight: bold
+      color: $headerText
+      background-color: $expertItemButtonBgc
+      font-family: $regular
+      margin: 20px auto 11px
+      padding: 0 10px
+      display: block
+      border-radius: $menuBR
+
+.elegant
+  background-color: $elegantBackground
+
+  .container
+    +container
+
+.elegantTitle
+  font-size: $profitSize
+  letter-spacing: 0.16em
+  font-weight: bold
+  color: $elegantColor
+  font-family: $regular
+  text-align: center
+  padding-top: 40px
+
+.eleganttSubtitle
+  font-size: $profitSubtitleSize
+  line-height: $profitSubtitleLH
+  letter-spacing: 0.06em
+  color: $expertItemColor
+  font-family: $regular
+  text-align: center
+  margin: 15px 0 35px 0
+
+.elegantItems
+  +row-flex()
+  +lg(padding-bottom, 0)
+  justify-content: space-between
+  padding-bottom: 175px
+
+  .elegantItem
+    +col()
+    +size(6)
+    +size-lg(12)
+    +size-sm(24)
+    margin-bottom: 25px
+
+    .sms
+      +sprite($s-sms-clouds)
+
+    .apple
+      +sprite($s-blue-apple-soft)
+
+    .app
+      +sprite($s-tog-app)
+
+    .barca
+      +sprite($s-barca)
+
+    .img
+      border-radius: $expertBR
+      display: block
+      margin: 0 auto
+
+    h3
+      font-size: $profitItemLHP
+      font-weight: bold
+      color: $profitBackground
+      font-family: $regular
+      text-align: center
+      margin-top: 26px
+
+.price
+  background-color: $headerText
+
+  .container
+    +container
+
+.priceItems
+  +row-flex()
+  justify-content: center
+  align-items: flex-end
+
+  .priceItem
+    +col()
+    +size(8)
+    +size-lg(14)
+    +size-md(16)
+    +size-sm(20)
+    +lg(margin-top, 0)
+    margin-bottom: 28px
+    margin-top: -127px
+
+    &:first-child
+      +lg(margin-top, 28px)
+
+    .hed
+      font-size: $priceItemH3Size
+      letter-spacing: 0.06em
+      font-weight: bold
+      color: $elegantColor
+      font-family: $semibold
+      text-align: center
+      margin-top: 25px
+      padding: 0 3px
+
+    .hedinv
+      color: $priceColor
+
+    .for
+      font-size: $profitSubtitleSize
+      line-height: $expertItemSize
+      letter-spacing: 0.1em
+      color: $priceColor
+      font-family: $semibold
+      text-align: center
+      margin: 12px 0 20px
+      padding: 0 3px
+
+    .forinv
+      color: $profitBackground
+
+    .list
+      font-size: $priceItemPSize
+      line-height: $priceItemPLH
+      letter-spacing: 0.04em
+      font-weight: bold
+      color: $elegantColor
+      font-family: $semibold
+      text-align: center
+      background-color: $elegantBackground
+
+    li
+      border-bottom: 1px inset $priceBorderColor
+
+      &:first-child
+        border: 1px inset $priceBorderColor
+        border-radius: $expertBR $expertBR 0 0
+        background-color: $headerText
+
+      &:last-child
+        border-bottom: none
+        border-radius: 0 0 $expertBR $expertBR
+        padding: 10px 0 25px 0
+
+    .bgc
+      background-color: $elegantColor
+
+    .bgcinv
+      background-color: $priceColor
+
+    .cost
+      font-size: $priceItemSizeCost
+      color: $headerText
+      font-family: $semibold
+      margin-right: 5px
+
+    .costMon
+      font-size: $logoPLH
+      color: $headerText
+      font-family: $semibold
+
+    .up
+      padding: 0 5px 0 10px
+      position: relative
+      bottom: 20px
+
+    button
+      padding: 8px
+      font-size: $profitItemLHP
+      color: $elegantColor
+      font-weight: bold
+      font-family: $semibold
+      border-radius: $menuBR
+      float: right
+      margin: 30px 10px 0 0
+
+    .invBtn
+      color: $priceColor
+
+.priceTitle
+  font-size: $profitSubtitleSize
+  line-height: $profitSubtitleLH
+  letter-spacing: 0.06em
+  color: $priceColor
+  font-family: $regular
+  text-align: center
+  margin-bottom: 26px
